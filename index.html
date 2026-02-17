@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Apology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .phone {
+            font-size: 100px;
+            animation: ring 1s infinite;
+        }
+        @keyframes ring {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+        #apology {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey, Pick Up the Phone!</h1>
+    <div class="phone">📞</div>
+    <p>I've been trying to call... 9 times!</p>
+    <button onclick="showApology()">Answer the Call</button>
+    <div id="apology">
+        <h2>My Sincere Apology</h2>
+        <p>Bro, I'm really sorry for not picking up the phone those 9 times. I was asleep and didn't hear it ringing. It wasn't deliberate—I promise. I value our talks and didn't mean to ignore you. Let's catch up soon!</p>
+    </div>
+    
+    <script>
+        function showApology() {
+            document.getElementById('apology').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
